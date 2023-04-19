@@ -1,5 +1,5 @@
 // stringLength.test.js
-const stringLength = require('./stringLength');
+const stringLength = require('./stringLength.js');
 
 /*
 // I created this code to test the jest test and see if this works with it.
