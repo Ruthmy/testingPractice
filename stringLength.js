@@ -1,21 +1,14 @@
 // Write a function that takes any string as an argument and returns its characters count.
 
 let stringLength = (string) => {
-
     if(string.length === 0) {
-        return 'The string is empty';
-        // return console.log('The string is empty');
+        throw new Error('Input string must be at least 1 character long');
     } else if (string.length > 10) {
-        return 'The string is longer than 10 characters';
-        // return console.log('The string is longer than 10 characters');
+        throw new Error('Input string must not be longer than 10 characters');
     } else {
         return string.length;
-        // return console.log(string.length);
     }
-
 }
 
-stringLength('');
-
-
+//stringLength('');
 module.exports = stringLength;
