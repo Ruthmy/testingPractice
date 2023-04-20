@@ -1,2 +1,4 @@
 import "./stringLength";
-import "./reverseString"
+import "./reverseString";
+import "./calculator";
+import "./capitalize";

@@ -17,7 +17,6 @@ describe('reverseString', () => {
     it('throws an error if input string is longer than 10 characters', () => {
         // Arrange
         const input = 'Hello, world!';
-        const expectedOutput = 13;
     
         // Act and Assert
         expect(() => { 

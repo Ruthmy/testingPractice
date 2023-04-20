@@ -1,5 +1,4 @@
 // import the calculator class calculator.test.js
-const { default: expect } = require('expect');
 const Calculator = require('./calculator.js');
 
 // create a new instance of the calculator
