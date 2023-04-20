@@ -1,7 +1,5 @@
-const { typeOf } = require("react-is");
-
+// stringLength function take a string as an argument and return it reversed
 let reverseString = (string) => {
-    //const result = string;
     if(string.length === 0) {
         throw new Error('Input string must be at least 1 character long');
     } else if (string.length > 10) {

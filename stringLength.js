@@ -1,4 +1,4 @@
-// Write a function that takes any string as an argument and returns its characters count.
+// stringLength function takes any string as an argument and returns its characters count.
 
 let stringLength = (string) => {
     if(string.length === 0) {
