@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1681996823207" clover="3.2.0">
-  <project timestamp="1681996823207" name="All files">
-    <metrics statements="30" coveredstatements="30" conditionals="12" coveredconditionals="12" methods="8" coveredmethods="8" elements="50" coveredelements="50" complexity="0" loc="30" ncloc="30" packages="1" files="4" classes="4"/>
+<coverage generated="1682081044450" clover="3.2.0">
+  <project timestamp="1682081044450" name="All files">
+    <metrics statements="34" coveredstatements="34" conditionals="16" coveredconditionals="16" methods="8" coveredmethods="8" elements="58" coveredelements="58" complexity="0" loc="34" ncloc="34" packages="1" files="4" classes="4"/>
     <file name="calculator.js" path="/home/ruth/2module/3week/testingPractice/calculator.js">
       <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
       <line num="4" count="3" type="stmt"/>
@@ -13,14 +13,18 @@
       <line num="23" count="1" type="stmt"/>
     </file>
     <file name="capitalize.js" path="/home/ruth/2module/3week/testingPractice/capitalize.js">
-      <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <metrics statements="11" coveredstatements="11" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
       <line num="2" count="1" type="stmt"/>
-      <line num="3" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="3" count="4" type="cond" truecount="2" falsecount="0"/>
       <line num="4" count="1" type="stmt"/>
-      <line num="7" count="1" type="stmt"/>
+      <line num="7" count="3" type="cond" truecount="2" falsecount="0"/>
       <line num="8" count="1" type="stmt"/>
-      <line num="10" count="1" type="stmt"/>
-      <line num="13" count="1" type="stmt"/>
+      <line num="11" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="29" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
     </file>
     <file name="reverseString.js" path="/home/ruth/2module/3week/testingPractice/reverseString.js">
       <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>

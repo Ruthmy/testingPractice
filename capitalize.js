@@ -3,19 +3,16 @@ let capitalize = (string) => {
   if(string.length === 0) {
     throw new Error('Input string must be at least 1 character long');
   }
-  
-  //const firstLetter = string[0];
-/*
-  if (!isNaN(string[0])) {
-    throw new Error('First character is a number');
+
+  if (typeof string !== 'string') {
+    throw new Error('Argument must be a string');
   }
-  
-  if (isNaN(string)) {
-    throw new Error('Input is not a string');
+
+  if (/^\d/.test(string)) {
+    throw new Error('First character of string cannot be a number');
   }
-  */
-  
-  const capitalizedFirstLetter = string[0].toUpperCase();
+    
+  const capitalizedFirstLetter = string.charAt(0).toUpperCase();
   const restOfWord = string.slice(1);
 
   return `${capitalizedFirstLetter}${restOfWord}`;

@@ -2,45 +2,48 @@
 const capitalize = require('./capitalize.js');
 
 describe('capitalize', () =>{
-  it('Returns a string with the first character capitalized', () => {
-    // Arrange
-    const input = 'string';
-    const expectedOutput = 'String';
-        
-    // Act
-    const result = capitalize(input);
+  //If everything is ok
+  describe('when given a valid string', () => {
+    it('Returns a string with the first character capitalized', () => {
+      // Arrange
+      const input = 'ruth mery';
+      const expectedOutput = 'Ruth mery';
+          
+      // Act
+      const result = capitalize(input);
 
-    // Assert
-    expect(result).toEqual(expectedOutput);
+      // Assert
+      expect(result).toEqual(expectedOutput);
+    });
+
+    it('Trows an error if the string is empty', () => {
+      // Arrange
+      const input = '';
+
+      // Act and Assert
+      expect(() => {
+        capitalize(input);
+      }).toThrow('Input string must be at least 1 character long');
+    });   
   });
 
-  it('Trows an error if the string is empty', () => {
-    // Arrange
-    const input = '';
+  describe('when given a non-string argument', () => {
+    test('throws an error with the message "Argument must be a string"', () => {
+      // Arrange
+      const input = 123;
 
-    // Act and Assert
-    expect(() => {
-      capitalize(input);
-    }).toThrow('Input string must be at least 1 character long');
+      // Act and Assert
+      expect(() => capitalize(input)).toThrow('Argument must be a string');
+    });
   });
-  /*
 
-  it('throws an error if input is not a string', () => {
-    // Arrange
-    const input = 123;
-  
-    // Act and Assert
-    expect(() => capitalize(input)).toThrow('Input is not a string');
+  describe('when given a string with a number as the first character', () => {
+    test('throws an error with the message "First character of string cannot be a number"', () => {
+      // Arrange
+      const input = '2024 welcome';
+
+      // Act and Assert
+      expect(() => capitalize(input)).toThrow('First character of string cannot be a number');
+    });
   });
-  it('throws an error if first character is a number', () => {
-    // Arrange
-    const input = '2hello world';
-  
-    // Act and Assert
-    expect(() => capitalize(input)).toThrow('First character is a number');
-  });
-*/
 });
-
-
-
